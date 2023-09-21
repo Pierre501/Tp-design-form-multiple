@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - multiple</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <h1 class="form-title">Inscription</h1>
+            <div class="icons-user"><i class="fa fa-leaf"></i></div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="Profile"></div>
+                <div class="progress-step" data-title="Contact"></div>
+                <div class="progress-step" data-title="Compte"></div>
+            </div>
+            <section class="form-step form-step-active">
+                <div class="form-group">
+                    <label for="nom" class="form-label" data-required=" *">Nom</label>
+                    <input type="email" name="nom" id="nom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="prenom" class="form-label" data-required=" *">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" class="form-control">
+                </div>
+                <div class="form-margin">
+                    <a href="#" class="btn btn-next width-50 float-end"> Suivant</a>
+                </div>
+            </section>
+            <section class="form-step">
+                <div class="form-group">
+                    <label for="email" class="form-label" data-required=" *">Adresse email</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="tel" class="form-label" data-required=" *">Tel</label>
+                    <input type="text" name="tel" id="tel" class="form-control">
+                </div>
+                <div class="form-margin group-button">
+                    <a href="#" class="btn btn-previous"> Précedent</a>
+                    <a href="#" class="btn btn-next"> Suivant</a>
+                </div>
+            </section>
+            <section class="form-step">
+                <div class="form-group">
+                    <label for="motdepasse" class="form-label" data-required=" *">Mot de passe</label>
+                    <i class="fa fa-eye-slash icon-size icon-position" id="icons_password"></i>
+                    <input type="password" name="motdepasse" id="motdepasse" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="confirm" class="form-label" data-required=" *">Confirmation mot de passe</label>
+                    <i class="fa fa-eye-slash icon-size icon-position" id="icons_confirm"></i>
+                    <input type="password" name="confirm" id="confirm" class="form-control">
+                </div>
+                <div class="form-margin group-button">
+                    <a href="#" class="btn btn-previous"> Précedent</a>
+                    <button type="submit" class="btn btn-primary"> Créer</button>
+                </div>
+            </section>
+        </form>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+</html>
